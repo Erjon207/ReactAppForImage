@@ -1,6 +1,6 @@
 FROM node:14-alpine AS build
 RUN apk update && apk upgrade && apk add git
-RUN git clone <repo>
+RUN git clone https://github.com/Erjon207/ReactAppForImage.git
 WORKDIR /app
 RUN npm install
 RUN npm run build
